@@ -18,3 +18,17 @@ export const previewClient = createClient({
 });
 
 export const getClient = (preview = false) => (preview ? previewClient : sanityClient);
+
+export type NewsListItem = {
+    title: string;
+    slug: string;            // we alias slug.current to a plain string in the GROQ
+    date: string;            // ISO datetime from Sanity
+};
+
+export type ShowListItem = {
+    title: string;
+    date: string;            // ISO datetime
+    venue?: string | null;
+    city?: string | null;
+    ticketsUrl?: string | null;
+};
