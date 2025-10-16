@@ -26,7 +26,7 @@ export default async function Home() {
     return (
         <main className="max-w-4xl mx-auto p-6 space-y-10">
             <section>
-                <h1 className="text-4xl font-bold mb-4">Welcome to HD Harmsen Official Site (that is under fucking construction)</h1>
+                <h1 className="text-4xl font-bold mb-4">Welcome to HD Harmsen Official Site (that is under construction)</h1>
                 <h1 className="text-3xl font-bold">Latest News</h1>
                 <ul className="mt-4 space-y-2">
                     {news.map((n) => (
