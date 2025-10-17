@@ -1,6 +1,12 @@
 // src/app/page.tsx
 import Link from "next/link";
 import { getClient } from "@/sanity/client";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'News | HDHarmsen',
+  description: 'Latest news and updates from HDHarmsen',
+};
 
 type NewsListItem = { title: string; slug: string; date: string };
 type ShowListItem = {
